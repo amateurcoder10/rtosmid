@@ -71,7 +71,7 @@ int main(int argc, char*argv[]) {
             goto finish;
         }
 
-	 pa_usec_t latency;
+	// pa_usec_t latency;
 
         if ((latency = pa_simple_get_latency(s, &error)) == (pa_usec_t) -1) {
             fprintf(stderr, __FILE__": pa_simple_get_latency() failed: %s\n", pa_strerror(error));
